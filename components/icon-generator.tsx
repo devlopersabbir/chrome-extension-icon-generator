@@ -1,7 +1,6 @@
 "use client";
 
-import { useState, useRef, createElement } from "react";
-import Image from "next/image";
+import { useState, useRef } from "react";
 import { motion } from "framer-motion";
 import { FileUploader } from "./file-uploader";
 import { IconPreview } from "./icon-preview";
