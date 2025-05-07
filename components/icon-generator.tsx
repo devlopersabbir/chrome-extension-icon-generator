@@ -54,7 +54,8 @@ export default function IconGenerator() {
       link.click();
 
       toast(`${size}x${size}px icon has been downloaded.`);
-    } catch (error) {
+    } catch (error: any) {
+      console.log("error", error);
       toast("Download Failed");
     }
   };
@@ -96,7 +97,8 @@ export default function IconGenerator() {
       FileSaver.saveAs(content, "chrome-extension-icons.zip");
 
       toast("All icons have been downloaded as a ZIP file.");
-    } catch (error) {
+    } catch (error: any) {
+      console.log("error", error);
       toast("There was an error downloading the icons.");
     }
   };
