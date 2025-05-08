@@ -2,17 +2,26 @@ import { ThemeProvider } from "@/components/theme-provider";
 import "./globals.css";
 import { Inter } from "next/font/google";
 import { Toaster } from "sonner";
+import { Metadata } from "next";
+import { websiteMetaData } from "@/constants";
 
-const inter = Inter({ subsets: ["latin"] });
+export const metadata: Metadata = websiteMetaData;
+
+const inter = Inter({ subsets: ["vietnamese"] });
+
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
-        <ThemeProvider attribute="class" defaultTheme="dark">
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="dark"
+          enableSystem={false}
+        >
           {children}
           <Toaster />
         </ThemeProvider>

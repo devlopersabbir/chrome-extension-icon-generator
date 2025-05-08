@@ -1,7 +1,12 @@
 {
-  "name": "chrome-extension-icon-generator",
-  "version": "0.1.0",
+  "name": "browser-extension-icon-generator",
+  "version": "0.0.2",
   "private": true,
+  "author": {
+    "name": "Sabbir Hossain Shuvo",
+    "email": "devlopersabbir@gmail.com",
+    "url": "https://devlopersabbir.github.io"
+  },
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",

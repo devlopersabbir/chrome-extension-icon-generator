@@ -10,6 +10,8 @@ import { Download, Copy, FileCode2 } from "lucide-react";
 import JSZip from "jszip";
 import FileSaver from "file-saver";
 import { toast } from "sonner";
+import Footer from "./shared/footer";
+import GithubLink from "./shared/github-link";
 
 export default function IconGenerator() {
   const [image, setImage] = useState<string | null>(null);
@@ -132,7 +134,7 @@ export default function IconGenerator() {
           <FileCode2 className="h-5 w-5 text-white" />
         </div>
         <h1 className="text-3xl font-bold tracking-tight md:text-4xl">
-          Chrome Extension Icon Generator
+          Browser Extension Icon Generator
         </h1>
       </motion.div>
 
@@ -191,7 +193,12 @@ export default function IconGenerator() {
                 <h3 className="text-lg font-medium">
                   Copy this code into your manifest.json file
                 </h3>
-                <Button variant="ghost" size="sm" onClick={copyManifestCode}>
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  onClick={copyManifestCode}
+                  className="cursor-pointer"
+                >
                   <Copy className="h-4 w-4" />
                 </Button>
               </div>
@@ -220,6 +227,8 @@ export default function IconGenerator() {
           </div>
         </motion.div>
       )}
+      <Footer />
+      <GithubLink />
     </div>
   );
 }
