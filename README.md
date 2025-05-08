@@ -1,4 +1,4 @@
-# Chrome Extension Icon Generator
+# Browser Extension Icon Generator
 
 <div align="center">
   <img src="https://raw.githubusercontent.com/devlopersabbir/chrome-extension-icon-generator/main/public/logo.png" alt="Chrome Extension Icon Generator Logo" width="200" />

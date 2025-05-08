@@ -1,15 +1,15 @@
 const Footer = () => {
   return (
     <footer className="mt-8 text-center text-sm text-zinc-500">
-      <p>Built with Next.js, Tailwind CSS and shadcn/ui</p>
+      <p>This is open source browser extension generator developer tools</p>
       <p className="mt-1">
         <a
-          href="https://github.com/devlopersabbir/chrome-extension-icon-generator"
+          href="https://devlopersabbir.github.io"
           className="text-cyan-500 hover:underline"
           target="_blank"
           rel="noopener noreferrer"
         >
-          GitHub Repo
+          Develop By <b>@devlopersabbir</b>
         </a>
       </p>
     </footer>

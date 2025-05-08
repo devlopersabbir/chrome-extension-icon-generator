@@ -1,11 +1,4 @@
-import type { Metadata } from "next";
 import IconGenerator from "@/components/icon-generator";
-
-export const metadata: Metadata = {
-  title: "Chrome Extension Icon Generator",
-  description:
-    "Generate Chrome extension icons in various sizes from your image",
-};
 
 export default function Home() {
   return (
